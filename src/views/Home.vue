@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
+  <div class="home bg-landingBG">
+    <navBar/>
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <landing-content/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import navBar from "../components/landing/navBar";
+import landingContent from "../components/landing/landingContent";
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    navBar,
+    landingContent,
   }
 }
 </script>
+<style>
+  .home {
+    background: #201D47;
+    /*background: url('src/assets/img/landing-img.png');*/
+    height: 100vh;
+  }
+</style>
