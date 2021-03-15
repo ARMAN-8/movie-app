@@ -1,7 +1,7 @@
 <template>
     <div>
-        <nav class="bg_almas_purple py-4">
-            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <nav class="">
+            <div class="">
                 <div class="relative flex items-center justify-between h-16">
                     <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <!-- Mobile menu button-->
@@ -22,9 +22,9 @@
                         </button>
                     </div>
                     <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                        <div class="flex-shrink-0 flex items-center text-4xl font-extrabold text-white">
-                            <span class="bg-purple-400 py-1 px-2">I</span>
-                            <span class="bg-blue-700 py-1 px-2">TEST</span>
+                        <div class="">
+                            <img src="src/assets/mainLogo.png" alt="">
+                            <router-link to="/about">About</router-link>
                         </div>
                     </div>
                     <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -48,10 +48,10 @@
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <button class="text-white py-2 px-8 border border-white rounded-full font-medium mx-2">
-                        ВОЙТИ
+                        {{ menu.signIn }}
                     </button>
                     <button class="text-white py-2 px-8 border border-white rounded-full font-medium mx-2">
-                        РЕГИСТРАЦИЯ
+                        {{ menu.registration }}
                     </button>
                 </div>
             </div>
@@ -73,9 +73,6 @@
 </script>
 <style>
     .menuButtons {
-        @apply  text-white py-2 px-8 border-2 border-white rounded-full font-medium mx-2 focus:border-gray-400 focus:text-gray-400 focus:outline-none
-    }
-    .bg_almas_purple {
-
+        @apply  py-2 px-8 border-2 border-black rounded-full font-medium mx-2 focus:border-gray-400 focus:text-gray-400 focus:outline-none
     }
 </style>
