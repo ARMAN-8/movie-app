@@ -1,0 +1,17 @@
+button {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  border: 4px solid transparent;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 30px;
+  padding: 0.5rem 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 0 7px 8px #fff;
+}
+
+/*# sourceMappingURL=button.css.map */
